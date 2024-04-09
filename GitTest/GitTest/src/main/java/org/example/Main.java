@@ -8,5 +8,9 @@ public class Main {
         System.out.println(" This is my New App!");
         System.out.println(" It is cool ");
 
+        System.out.println(" I like turtles");
+        System.out.println(" jg diff");
+        System.out.println(" no ganks");
+
     }
 }
