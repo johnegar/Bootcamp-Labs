@@ -8,12 +8,12 @@ public class Main {
         int secondNumber = 12;
 
         //math symbols are + - / * %
-        int A = firstNumber - secondNumber;
-        int S = firstNumber + secondNumber;
+        int A = firstNumber + secondNumber;
+        int S = firstNumber - secondNumber;
         int M = firstNumber * secondNumber;
         int D = firstNumber / secondNumber;
 
-        System.out.println("firstNumber = 5, secondNumber = 12 ");
+        System.out.println("firstNumber = 5, secondNumber = 12");
         System.out.println("""
                 Possible Calculations
                 (A)dd
@@ -27,13 +27,13 @@ public class Main {
         String result = scanner.nextLine();
 
         if (result.equalsIgnoreCase("A")) {
-            System.out.println(firstNumber + "+" + secondNumber + "=" + (firstNumber + secondNumber));
+            System.out.println(firstNumber + "+" + secondNumber + "=" + (A));
         } else if (result.equalsIgnoreCase("S")) {
-            System.out.println(firstNumber + "-" + secondNumber + "=" + (firstNumber - secondNumber));
+            System.out.println(firstNumber + "-" + secondNumber + "=" + (S));
         } else if (result.equalsIgnoreCase("M")) {
-            System.out.println(firstNumber + "*" + secondNumber + "=" + (firstNumber * secondNumber));
+            System.out.println(firstNumber + "*" + secondNumber + "=" + (M));
         } else if (result.equalsIgnoreCase("D")) {
-            System.out.println(firstNumber + "/" + secondNumber + "=" + (firstNumber / secondNumber));
+            System.out.println(firstNumber + "/" + secondNumber + "=" + (D));
 
         }
     }
