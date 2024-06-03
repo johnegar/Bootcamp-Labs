@@ -27,7 +27,7 @@ public class Main {
 
         SandwichOrder order = new SandwichOrder(size);
 
-        System.out.println("Add meats (type '0' to finish): 1. STEAK, 2. HAM, 3. SALAMI, 4. ROAST BEEF, 5. CHICKEN, 6. BACON");
+        System.out.println("Add meats (type '0' to finish): 1. STEAK, 2. HAM, 3. ROAST BEEF, 4. CHICKEN, 5. BACON");
         while (true) {
             int meatChoice = scanner.nextInt();
             if (meatChoice == 0) break;
@@ -39,15 +39,12 @@ public class Main {
                     order.addMeat(Meat.Ham);
                     break;
                 case 3:
-                    order.addMeat(Meat.Salami);
-                    break;
-                case 4:
                     order.addMeat(Meat.RoastBeef);
                     break;
-                case 5:
+                case 4:
                     order.addMeat(Meat.Chicken);
                     break;
-                case 6:
+                case 5:
                     order.addMeat(Meat.Bacon);
                     break;
                 default:
@@ -56,7 +53,7 @@ public class Main {
         }
 
         // Add extra meats
-        System.out.println("Add extra meats (type '0' to finish): 1. EXTRA_STEAK, 2. EXTRA_HAM, 3. EXTRA_CHICKEN");
+        System.out.println("Add extra meats (type '0' to finish): 1. Extra Steak, 2. Extra Ham, 3. Extra RoastBeef, 4. Extra Chicken, 5. Extra Bacon");
         while (true) {
             int extraMeatChoice = scanner.nextInt();
             if (extraMeatChoice == 0) break;
@@ -68,8 +65,15 @@ public class Main {
                     order.addExtraMeat(ExtraMeat.Extra_Ham);
                     break;
                 case 3:
+                    order.addExtraMeat(ExtraMeat.Extra_RoastBeef);
+                    break;
+                case 4:
                     order.addExtraMeat(ExtraMeat.Extra_Chicken);
                     break;
+                case 5:
+                    order.addExtraMeat(ExtraMeat.Extra_Bacon);
+                    break;
+
                 default:
                     System.out.println("Invalid extra meat choice.");
             }

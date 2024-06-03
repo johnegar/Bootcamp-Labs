@@ -5,13 +5,13 @@ import java.util.Map;
 
 public enum ExtraMeat {
     Extra_Steak(new EnumMap<>(Map.of(
-    SandwichSize.Four_Inch,1.00,
-    SandwichSize.Eight_Inch,2.00,
-    SandwichSize.Twelve_Inch,3.00))),
+            SandwichSize.Four_Inch,1.00,
+            SandwichSize.Eight_Inch,2.00,
+            SandwichSize.Twelve_Inch,3.00))),
     Extra_Ham(new EnumMap<>(Map.of(
-    SandwichSize.Four_Inch,1.00,
-    SandwichSize.Eight_Inch,2.00,
-    SandwichSize.Twelve_Inch,3.00))),
+            SandwichSize.Four_Inch,1.00,
+            SandwichSize.Eight_Inch,2.00,
+            SandwichSize.Twelve_Inch,3.00))),
     Extra_RoastBeef(new EnumMap<>(Map.of(
             SandwichSize.Four_Inch,1.00,
             SandwichSize.Eight_Inch,2.00,

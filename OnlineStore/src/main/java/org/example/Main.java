@@ -22,7 +22,7 @@ public class Main {
                 break;
 
             case "2":
-            Screens.  displayCart( products,scanner);
+            Screens.displayCart( products,scanner);
                 break;
 
             case "3":
